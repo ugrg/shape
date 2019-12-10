@@ -4,12 +4,12 @@
  */
 
 import React from "react";
-import { Circle, Rect } from "../../lib/shape";
+import * as shape from "../../lib/shape";
 import styles from "./styles.module.less";
 
 const defaultProps = {
   // 难度
-  difficulty: 5
+  difficulty: 2
 };
 type DefaultProps = typeof defaultProps;
 
@@ -32,7 +32,7 @@ class Colorful extends React.Component<propTypes & typeof defaultProps, StateTyp
   static defaultProps = defaultProps;
 
   private static renderRandom () {
-    const Types = [Circle, Rect];
+    const Types = Object.values(shape);
     const Type = Types[Math.floor(Math.random() * Types.length)];
     return <Type/>;
   }

@@ -1,4 +1,5 @@
 import "./styles.less";
 
-export { default as Circle } from "./Circle";
-export { default as Rect } from "./Rect";
+export { default as 圆形 } from "./圆形";
+export { default as 正方形 } from "./正方形";
+export { default as 三角形 } from "./三角形";
