@@ -1,0 +1,49 @@
+.settings {
+  position: absolute;
+  z-index: 10;
+  top: 1rem;
+  left: 1rem;
+  border: 1px solid blue;
+  box-shadow: 0 0 5px 0 #000;
+  border-radius: 5px;
+  user-select: none;
+  opacity: 0.5;
+  background: #fff;
+
+  div {
+    padding: 5px;
+    //color: #fff;
+
+    small {
+      color: #f0f
+    }
+
+    span {
+      display: inline-block;
+      width: 40%;
+    }
+
+    input:not([type=checkbox]), select {
+      display: inline-block;
+      width: 30%;
+      border-radius: 2px;
+      border: 1px solid #999;
+      padding: 0 5px;
+      background: transparent;
+      //color: #fff;
+    }
+  }
+
+  .command {
+    text-align: right;
+
+    button {
+      width: 25%;
+      background: transparent;
+      border: 1px solid #999;
+      border-radius: 2px;
+      margin-left: 5px;
+      //color: #fff;
+    }
+  }
+}

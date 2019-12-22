@@ -7,8 +7,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "standard",
-    "plugin:jsx-a11y/recommended"
+    "standard"
   ],
   globals: {
     Atomics: "readonly",
@@ -31,7 +30,6 @@ module.exports = {
   plugins: [
     "react",
     "react-hooks",
-    "jsx-a11y",
     "@typescript-eslint"
   ],
   rules: {
@@ -75,7 +73,6 @@ module.exports = {
       }
     }],//强制组件方法顺序
     "react/jsx-handler-names": [1],           // 限制事件处理命名习惯,用作事件处理程序的组件方法的前缀。默认为handle,用作事件处理程序的props的前缀。默认为on
-    "jsx-a11y/anchor-is-valid": [0],
     "indent": [1, 2, { "SwitchCase": 1 }],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
@@ -96,7 +93,7 @@ module.exports = {
     "no-func-assign": 2,                      // 禁止重复的函数声明
     "no-dupe-keys": 2,                        // 在创建对象字面量时不允许键重复 {a:1,a:1}
     "no-alert": 2,                            // 禁止使用alert confirm prompt
-    "no-console": 2,
+    "no-console": 0,
     "quote-props": ["error", "consistent-as-needed"],
     "no-return-assign": 0,
     "comma-dangle": [2, "never"],             // 对象字面量项尾不能有逗号
