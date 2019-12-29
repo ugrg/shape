@@ -45,10 +45,11 @@ module.exports = {
     "react/prop-types": [2, { skipUndeclared: true }],// 防止在react组件定义中缺少props验证
     "react/sort-comp": [2, {
       "order": [
-        "constructor",        // 构造函数
         "static-methods",     // 静态方法
-        "handlers",           // 事件处理
+        "defaultProps",       // 默认参数
+        "constructor",        // 构造函数
         "everything-else",    // 其他方法
+        "handlers",           // 事件处理
         "lifecycle",          // 生命周期函数
         "renders"             // 渲染方法
       ],

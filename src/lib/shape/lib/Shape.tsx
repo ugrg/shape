@@ -24,6 +24,8 @@ interface StateTypes {
 }
 
 class Shape extends React.Component<PropTypes, StateTypes> {
+  private static defaultProps = defaultProps;
+
   constructor (props: PropTypes) {
     super(props);
     this.state = {
@@ -33,8 +35,6 @@ class Shape extends React.Component<PropTypes, StateTypes> {
       }, props.style)
     };
   }
-
-  static defaultProps = defaultProps;
 
   render () {
     const { children, forwardRef } = this.props;
@@ -47,5 +47,4 @@ class Shape extends React.Component<PropTypes, StateTypes> {
   }
 }
 
-Shape.defaultProps = defaultProps;
 export default Shape;
