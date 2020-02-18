@@ -5,6 +5,7 @@
 
 import React from "react";
 import * as shape from "../../lib/shape";
+import Target from "./Target";
 import styles from "./styles.module.less";
 
 const defaultProps = {
@@ -27,8 +28,10 @@ class Colorful extends React.Component<propTypes & typeof defaultProps, StateTyp
     this.state = {
       difficulty: props.difficulty
     };
+    this.target = new Target();
   }
 
+  private target: Target;
   static defaultProps = defaultProps;
 
   private static renderRandom () {

@@ -9,6 +9,9 @@ const Home: React.FC = () => {
       <Link to={"/colorful"}>多彩方格</Link>
       <div className={styles.colorful}/>
     </h2>
+    <h2>
+      <Link to={"/imitate"}>模仿</Link>
+    </h2>
   </article>;
 };
 
