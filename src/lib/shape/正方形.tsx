@@ -20,7 +20,7 @@ const 正方形 = React.forwardRef(({ rotate, ...props }: propTypes, ref: React.
   const [_rotate] = useState(rotate || Math.floor(Math.random() * 100));
   const points: Array<[number, number]> = [[_rotate, 0], [100, _rotate], [100 - _rotate, 100], [0, 100 - _rotate]]
     .map(([x, y]) => [x - 50, y - 50]);
-  return <Polygon {...props} ref={ref} points={points}/>;
+  return <Polygon {...props} ref={ref} points={points} />;
 });
 
 正方形.displayName = "正方形";

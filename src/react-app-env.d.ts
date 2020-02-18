@@ -60,8 +60,3 @@ declare module "*.module.less" {
 declare module "classnames" {
   export default function (...args: ({ [x: string]: boolean } | string | undefined)[]): string;
 }
-
-declare namespace React {
-  type RefObj = string | ((instance: HTMLDivElement | null) => void) | RefObject<HTMLDivElement> | null | undefined
-  export { RefObj };
-}
