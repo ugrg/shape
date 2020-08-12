@@ -7,11 +7,12 @@ const Home: React.FC = () => {
     <h1>颜色与形状学习</h1>
     <h2>
       <Link to={"/colorful"}>多彩方格</Link>
-      <div className={styles.colorful} />
+      <div className={styles.colorful}/>
     </h2>
     <h2>
       <Link to={"/imitate"}>模仿</Link>
     </h2>
+    <h2>
       <Link to={"/mandelbrot"}>Mandelbrot</Link>
     </h2>
     <h2><Link to={"/test"}>语音合成测试</Link></h2>

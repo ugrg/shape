@@ -6,7 +6,7 @@ const paths = require("./paths");
 const fs = require("fs");
 const fetch = require("node-fetch").default;
 const QueryString = require("querystring");
-const { API_KEY, SECRET_KEY } = require("./config");
+// const { API_KEY, SECRET_KEY } = require("./config");
 
 const protocol = process.env.HTTPS === "true" ? "https" : "http";
 const host = process.env.HOST || "0.0.0.0";
@@ -100,13 +100,13 @@ module.exports = function (proxy, allowedHost) {
       // it used the same host and port.
       // https://github.com/facebook/create-react-app/issues/2272#issuecomment-302832432
       app.use(noopServiceWorkerMiddleware());
-      app.get("/oauth/2.0/token", (req, res) => {
-        fetch(`https://openapi.baidu.com/oauth/2.0/token?${QueryString.stringify({
-          "grant_type": "client_credentials",
-          "client_id": API_KEY,
-          "client_secret": SECRET_KEY
-        })}`).then(response => response.body.pipe(res));
-      });
+      // app.get("/oauth/2.0/token", (req, res) => {
+      //   fetch(`https://openapi.baidu.com/oauth/2.0/token?${QueryString.stringify({
+      //     "grant_type": "client_credentials",
+      //     "client_id": API_KEY,
+      //     "client_secret": SECRET_KEY
+      //   })}`).then(response => response.body.pipe(res));
+      // });
     }
   };
 };

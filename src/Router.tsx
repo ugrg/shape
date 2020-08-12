@@ -17,10 +17,10 @@ const defaultProps = {};
 const Routers: React.FC = () => <Router>
   <Switch>
     <Route exact path={"/colorful"} component={Colorful}/>
-    <Route exact path={"/imitate"} component={Imitate}/>        
-    <Route exact path={"/mandelbrot"} component={Mandelbrot} />
-    <Route exact path={"/Test"} component={Test} />
-    <Route exact path={"/"} component={Home} />
+    <Route exact path={"/imitate"} component={Imitate}/>
+    <Route exact path={"/mandelbrot"} component={Mandelbrot}/>
+    <Route exact path={"/Test"} component={Test}/>
+    <Route exact path={"/"} component={Home}/>
   </Switch>
 </Router>;
 
